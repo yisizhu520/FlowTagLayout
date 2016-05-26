@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.stevenmoon.flowtaglayout.MainActivity"
+    >
+
+    <com.stevenmoon.flowtaglayout.WJFlowLayout
+        android:id="@+id/flow1"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorAccent"
+        >
+
+        <TextView
+            style="@style/text_flag_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="IT工程师"
+            />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="学习ing"
+            />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="恋爱ing"
+            />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="挣钱ing"
+            />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="努力ing"
+            />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="I thick i can"
+            />
+        <TextView
+            style="@style/text_flag_01"
+            android:text="i believe i can fly"
+            />
+        <TextView
+            style="@style/text_flag_01"
+            android:text="in the sky"
+            />
+        <TextView
+            style="@style/text_flag_01"
+            android:text="like a star"
+            />
+        <TextView
+            style="@style/text_flag_01"
+            android:text="on the far"
+            />
+    </com.stevenmoon.flowtaglayout.WJFlowLayout>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:onClick="addNewTag"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+    <com.stevenmoon.flowtaglayout.FlowLayout
+        android:id="@+id/flow2"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="start"
+        >
+
+        <TextView
+            style="@style/text_flag_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Welcome"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="12dp"
+            >
+        <TextView
+            android:id="@+id/child1"
+            style="@style/text_flag_02"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="IT工程师"
+            />
+
+        <TextView
+            style="@style/text_flag_02"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="学习ing"
+            />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_flag_02"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:text="恋爱ing"
+            />
+
+        <TextView
+            style="@style/text_flag_02"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:text="挣钱ing"
+            />
+
+        <TextView
+            style="@style/text_flag_02"
+            android:text="努力ing"
+            />
+
+        <TextView
+            style="@style/text_flag_02"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="bottom"
+            android:text="I thick i can"
+            />
+        <TextView
+            style="@style/text_flag_02"
+            android:text="i believe i can fly"
+            />
+        <TextView
+            style="@style/text_flag_02"
+            android:text="in the sky"
+            />
+        <TextView
+            style="@style/text_flag_02"
+            android:text="like a star"
+            />
+        <TextView
+            style="@style/text_flag_02"
+            android:text="on the far"
+            />
+    </com.stevenmoon.flowtaglayout.FlowLayout>
+
+    </ScrollView>
+
+</LinearLayout>
